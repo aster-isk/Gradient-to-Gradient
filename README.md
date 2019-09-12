@@ -9,3 +9,6 @@ When run randomly chooses a number between 1 and 500. The user manipulates the s
 
 # Boarder-Images
 Takes images in a specified directory and adds a boarder that is half transparent and half a color of the users choosing and a size of the users chosing. Program creates a file in that directory and saves the new images as JPEG images. Uses PIL.
+
+# Team15
+Team 15 was a program written to run in a 'Prisoners Dilemma' tournament in my APCSP class. The program takes the move history and score and compares the point gain with each choice and compares these ratios of 'betray' and 'colaborate' to make the next choice. The first choice is random. The only original code from me is from lines 16-40. Everything else was already written so the program could be run classwide.
