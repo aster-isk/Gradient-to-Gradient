@@ -18,7 +18,7 @@ random_number = random.randint(1,501)
 red_value = 0
 green_value = 0
 def color_decimal(slider_int, random_number):
-    '''this nasty boy changes the distance of the slider from the 
+    '''Changes the distance of the slider from the 
     randomly generated number into a color'''
     
     
@@ -60,12 +60,9 @@ def color_decimal(slider_int, random_number):
     return red_value, green_value
 
 def hexstring(color_value):
-    
-    # Convert to hex
+
     slider_hex = hex(color_value)
-    # Drop the 0x at the beginning of the hex string
     slider_hex_digits = slider_hex[2:] 
-    # Ensure two digits of hexadecimal:
     if len(slider_hex_digits)==1:
         slider_hex_digits = '0' + slider_hex_digits 
     return slider_hex_digits
@@ -89,18 +86,4 @@ number_slider = Tkinter.Scale(root, from_=0, to=500, variable=number_intvar,
                            label='Number', command=color_changed)
 number_slider.grid(row=1, column=0, sticky=Tkinter.E)                           
   
-  
-'''
-def random_number_generate():
-    random_number = random.randint(1,501)
-    return random_number
-
-Button = Tkinter.Button(root,text= 'Random Number!',
-            command = random_number_generate, background="red")
-Button.grid(row =2, column=0)
-'''
-
-#######
-# Event Loop
-####### color_decimal(240, 500)
 root.mainloop()                        
